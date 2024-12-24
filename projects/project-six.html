@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Template - Alex Gee</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,400;0,500;1,400;1,500&family=DM+Mono:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        mono: ['DM Mono', 'monospace'],
+                    },
+                    fontSize: {
+                        '5xl': ['3rem', '1.2'],
+                        '2xl': ['1.5rem', '1.2'],
+                        'lg': ['1.125rem', '1.5']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'DM Mono', monospace;
+        }
+    </style>
+</head>
+<body>
+    <!-- Main container -->
+    <div class="flex flex-col min-h-screen antialiased bg-white text-black">
+        
+        <!-- Header -->
+        <div class="sticky top-0 z-10 bg-white border-b border-current">
+            <div class="flex w-full max-w-7xl mx-auto px-4">
+                <!-- Logo container -->
+                <div class="border-r border-current flex items-center">
+                    <a href="/index.html" class="flex items-center h-full p-4">
+                        <span class="text-base tracking-widest uppercase">ALEX GEE</span>
+                    </a>
+                </div>
+                <!-- Navigation -->
+                <div class="flex items-center">
+                    <nav>
+                        <ul class="flex divide-x divide-current">
+                            <li><a href="/info.html" class="p-4 text-base tracking-widest uppercase">Info</a></li>
+                            <li><a href="/projects.html" class="p-4 text-base tracking-widest uppercase">Projects</a></li>
+                            <li><a href="/posts.html" class="p-4 text-base tracking-widest uppercase">Posts</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main content -->
+        <main>
+            <!-- Project article -->
+            <article class="px-4 py-14 lg:py-20">
+                <!-- Project content container -->
+                <div class="relative w-full max-w-7xl mx-auto">
+                    <!-- Project header -->
+                    <header class="mb-10 sm:mb-16">
+                        <h1 class="text-5xl">Johnny Carson 2.0</h1>
+                    </header>
+
+                    <!-- Project description -->
+                    <div class="text-xl leading-normal uppercase max-w-screen-md mx-auto mb-10 sm:mb-16">
+                        An ongoing project to reincarnate the King of Late Night using modern tools
+                    </div>
+
+                    <!-- Project media -->
+                    <div class="mb-10 sm:mb-16">
+                        <div class="w-full aspect-square bg-gray-100 border-2 border-current flex items-center justify-center">
+                            <span class="text-lg">Project Header Image</span>
+                        </div>
+                    </div>
+
+                    <!-- Project content -->
+                    <div class="max-w-screen-md mx-auto">
+                        <!-- Content sections -->
+                        <section class="mb-16">
+                            <h2 class="text-3xl mb-8">Overview</h2>
+                            <p class="text-lg mb-4">
+                                An attempt to bring a cultural classic back to life using new forms of technology combined with archival footage and found materials.
+                            </p>
+                        </section>
+
+                        <section class="mb-16">
+                            <h2 class="text-3xl mb-8">Process</h2>
+                            <div class="w-full aspect-square bg-gray-100 border-2 border-current flex items-center justify-center mb-8">
+                                <span class="text-lg">Process Image</span>
+                            </div>
+                            <p class="text-lg mb-4">
+                                Describe the development process, challenges faced, and solutions implemented.
+                            </p>
+                            <ul class="list-disc list-inside text-lg mb-4">
+                                <li>Research and planning phase</li>
+                                <li>Design and development</li>
+                                <li>Testing and iteration</li>
+                            </ul>
+                        </section>
+
+                        <section class="mb-16">
+                            <h2 class="text-3xl mb-8">Results</h2>
+                            <p class="text-lg mb-4">
+                                Share the outcomes, impact, and lessons learned from the project.
+                            </p>
+                        </section>
+                    </div>
+                </div>
+            </article>
+        </main>
+    </div>
+</body>
+</html>

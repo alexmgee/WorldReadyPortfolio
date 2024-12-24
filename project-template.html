@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index - Alex Gee</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,400;0,500;1,400;1,500&family=DM+Mono:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        mono: ['DM Mono', 'monospace'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'DM Mono', monospace;
+        }
+    </style>
+</head>
+<body>
+    <!-- Main container -->
+    <div class="flex flex-col min-h-screen antialiased bg-white text-black">
+        
+        <!-- Header -->
+        <div class="sticky top-0 z-10 bg-white border-b border-current">
+            <div class="flex w-full max-w-7xl mx-auto px-4">
+                <!-- Logo container -->
+                <div class="border-r border-current flex items-center">
+                    <a href="/index.html" class="flex items-center h-full p-4">
+                        <span class="text-base tracking-widest uppercase">ALEX GEE</span>
+                    </a>
+                </div>
+                <!-- Navigation -->
+                <div class="flex items-center">
+                    <nav>
+                        <ul class="flex divide-x divide-current">
+                            <li><a href="/info.html" class="p-4 text-base tracking-widest uppercase">Info</a></li>
+                            <li><a href="/projects.html" class="p-4 text-base tracking-widest uppercase">Projects</a></li>
+                            <li><a href="/blog.html" class="p-4 text-base tracking-widest uppercase">Blog</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main content -->
+        <main>
+            <!-- Hero section -->
+            <div class="sb-component sb-component-section flex flex-col justify-center py-12 px-4">
+                <div class="flex w-full justify-center">
+                    <div class="relative w-full max-w-7xl">
+                        <div class="flex flex-col lg:flex-row lg:space-x-8 space-y-8 lg:space-y-0">
+                            <div class="flex-1 w-full">
+                                <!-- Hero title -->
+                                <h1 class="h1 text-5xl">
+                                    I'M A DEVELOPER, DIGITAL ARTIST, CONSULTANT AND A BUNCH OF OTHER IMPRESSIVE TITLES AND BUZZ WORDS.
+                                </h1>
+                                <!-- Hero subtitle -->
+                                <p class="text-xl sm:text-2xl mt-4">
+                                    This is my info—I'm sharing it all this with ya'll to impress you with all the hard work I've done in the past few years. Once you're impressed, you can continue to scroll down to see more details and credentials about me.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Projects section -->
+            <div class="sb-component sb-component-section flex flex-col justify-center py-12 px-4">
+                <div class="flex w-full justify-center">
+                    <div class="relative w-full max-w-7xl">
+                        <!-- Section heading -->
+                        <h2 class="text-3xl mb-12">Projects</h2>
+                        
+                        <!-- Projects grid -->
+                        <div class="grid md:grid-cols-2 gap-12">
+                            <!-- Project card -->
+                            <div class="pb-10">
+                                <div class="w-full mb-6">
+                                    <img src="/images/featured-Image1.jpg" alt="Project preview" class="w-full object-cover transition-transform duration-500 hover:scale-105">
+                                </div>
+                                <h3 class="text-2xl">Project Template</h3>
+                                <p class="text-lg mt-5">A brief description of your project. This could be a tagline, mission statement, or key achievement.</p>
+                            </div>
+                        </div>
+                        
+                        <!-- View all projects link -->
+                        <div class="flex justify-end mt-8">
+                            <a href="/projects.html" class="inline-flex items-center text-lg">See all projects</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Blog section -->
+            <div class="sb-component sb-component-section flex flex-col justify-center py-12 px-4">
+                <div class="flex w-full justify-center">
+                    <div class="relative w-full max-w-7xl">
+                        <!-- Section heading -->
+                        <h2 class="text-3xl mb-12">Featured Posts</h2>
+                        
+                        <!-- Blog posts -->
+                        <div class="space-y-12">
+                            <!-- Blog post -->
+                            <article class="pb-10">
+                                <time class="block mb-3">03-19-2024</time>
+                                <h3 class="text-2xl">Blog Post Title</h3>
+                                <p class="text-lg mt-5">This is a preview of the blog post content...</p>
+                            </article>
+                        </div>
+                        
+                        <!-- View all posts link -->
+                        <div class="flex justify-end mt-8">
+                            <a href="/blog.html" class="inline-flex items-center text-lg">See all posts</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
+
+

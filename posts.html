@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posts - Alex Gee</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,400;0,500;1,400;1,500&family=DM+Mono:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        mono: ['DM Mono', 'monospace'],
+                    },
+                    fontSize: {
+                        '5xl': ['3rem', '1.2'],
+                        '2xl': ['1.5rem', '1.2'],
+                        'lg': ['1.125rem', '1.5']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'DM Mono', monospace;
+        }
+    </style>
+</head>
+<body>
+    <!-- Main container -->
+    <div class="flex flex-col min-h-screen antialiased bg-white text-black">
+        
+        <!-- Header -->
+        <div class="sticky top-0 z-10 bg-white border-b border-current">
+            <div class="flex w-full max-w-7xl mx-auto px-4">
+                <!-- Logo container -->
+                <div class="border-r border-current flex items-center">
+                    <a href="/index.html" class="flex items-center h-full p-4">
+                        <span class="text-base tracking-widest uppercase">ALEX GEE</span>
+                    </a>
+                </div>
+                <!-- Navigation -->
+                <div class="flex items-center">
+                    <nav>
+                        <ul class="flex divide-x divide-current">
+                            <li><a href="/info.html" class="p-4 text-base tracking-widest uppercase">Info</a></li>
+                            <li><a href="/projects.html" class="p-4 text-base tracking-widest uppercase">Projects</a></li>
+                            <li><a href="/posts.html" class="p-4 text-base tracking-widest uppercase">Posts</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main content -->
+        <main>
+            <!-- Posts section -->
+            <div class="flex flex-col justify-center pt-20">
+                <!-- Section container -->
+                <div class="relative w-full max-w-7xl mx-auto px-4">
+                    <!-- Posts list -->
+                    <div class="grid md:grid-cols-2 gap-16">
+                        <!-- Post -->
+                        <a href="/posts/post-one.html" class="pb-10">
+                            <div class="w-full mb-8">
+                                <div class="w-full aspect-square bg-gray-100 border-2 border-current flex items-center justify-center">
+                                    <span class="text-lg">Post Preview</span>
+                                </div>
+                            </div>
+                            <time class="block mb-4">12-24-2024</time>
+                            <h3 class="text-2xl mb-4">10-Year Vision</h3>
+                            <p class="text-lg">One day, ten years from now...</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

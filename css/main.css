@@ -1,0 +1,278 @@
+/* Base styles */
+body {
+    font-family: 'DM Mono', monospace;
+}
+
+/* Layout */
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.min-h-screen {
+    min-height: 100vh;
+}
+
+.antialiased {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Colors */
+.bg-white {
+    background-color: white;
+}
+
+.text-black {
+    color: black;
+}
+
+/* Header */
+.sticky {
+    position: sticky;
+}
+
+.top-0 {
+    top: 0;
+}
+
+.z-10 {
+    z-index: 10;
+}
+
+.border-b {
+    border-bottom-width: 1px;
+}
+
+.border-current {
+    border-color: currentColor;
+}
+
+/* Navigation */
+.flex {
+    display: flex;
+}
+
+.items-stretch {
+    align-items: stretch;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.border-r {
+    border-right-width: 1px;
+}
+
+.h-full {
+    height: 100%;
+}
+
+.p-4 {
+    padding: 1rem;
+}
+
+.text-base {
+    font-size: 1rem;
+}
+
+.tracking-widest {
+    letter-spacing: 0.1em;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.divide-x > * + * {
+    border-left-width: 1px;
+}
+
+/* Main content */
+.px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.py-14 {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+}
+
+.lg\:py-20 {
+    @media (min-width: 1024px) {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
+}
+
+.relative {
+    position: relative;
+}
+
+.w-full {
+    width: 100%;
+}
+
+.max-w-7xl {
+    max-width: 80rem;
+}
+
+/* Typography */
+.text-5xl {
+    font-size: 3rem;
+    line-height: 1.2;
+}
+
+.text-xl {
+    font-size: 1.25rem;
+    line-height: 1.5;
+}
+
+.text-2xl {
+    font-size: 1.5rem;
+    line-height: 1.4;
+}
+
+.text-lg {
+    font-size: 1.125rem;
+    line-height: 1.5;
+}
+
+/* Spacing */
+.mb-10 {
+    margin-bottom: 2.5rem;
+}
+
+.sm\:mb-16 {
+    @media (min-width: 640px) {
+        margin-bottom: 4rem;
+    }
+}
+
+.mb-2 {
+    margin-bottom: 0.5rem;
+}
+
+.md\:mb-6 {
+    @media (min-width: 768px) {
+        margin-bottom: 1.5rem;
+    }
+}
+
+/* Images */
+.object-cover {
+    object-fit: cover;
+}
+
+/* Transitions */
+.transition-transform {
+    transition-property: transform;
+}
+
+.duration-500 {
+    transition-duration: 500ms;
+}
+
+.group:hover .group-hover\:scale-105 {
+    transform: scale(1.05);
+}
+
+/* Grid */
+.grid {
+    display: grid;
+}
+
+.md\:grid-cols-2 {
+    @media (min-width: 768px) {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+.gap-12 {
+    gap: 3rem;
+}
+
+.gap-4 {
+    gap: 1rem;
+}
+
+/* Lists */
+.list-disc {
+    list-style-type: disc;
+}
+
+.list-inside {
+    list-style-position: inside;
+}
+
+/* Blockquotes */
+.border-l-4 {
+    border-left-width: 4px;
+}
+
+.pl-4 {
+    padding-left: 1rem;
+}
+
+.italic {
+    font-style: italic;
+}
+
+/* Project navigation */
+.overflow-hidden {
+    overflow: hidden;
+}
+
+.pt-2\/3 {
+    padding-top: 66.666667%;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.left-0 {
+    left: 0;
+}
+
+.top-0 {
+    top: 0;
+}
+
+/* Form elements */
+.bg-transparent {
+    background-color: transparent;
+}
+
+.focus\:outline-none:focus {
+    outline: none;
+}
+
+/* Responsive utilities */
+@media (min-width: 768px) {
+    .md\:flex {
+        display: flex;
+    }
+    
+    .md\:justify-between {
+        justify-content: space-between;
+    }
+    
+    .md\:order-last {
+        order: 9999;
+    }
+    
+    .md\:ml-12 {
+        margin-left: 3rem;
+    }
+    
+    .md\:max-w-2xl {
+        max-width: 42rem;
+    }
+    
+    .md\:flex-grow {
+        flex-grow: 1;
+    }
+}
